@@ -1,0 +1,156 @@
+ /*
+    top = haut
+    bottom = bas
+    left = gauche
+    right = droite
+
+pour avoir la liste des diffents paramètre d'une propriété on control + espace.
+exemple: si je veux voir les differentes propriété de display : on ecrit display puis espace puis controle+ espace
+
+
+ */
+  /* pour adapter tout le contenu à la page c-à-d faire apparaitre tous les contenus d'une div  on fait :*/
+  *{
+    overflow: auto; /*overflow = apparaitre tous les contenus d'une*/
+    }
+    body {
+        background-color: #8ba1bb;
+        font-family: Arial;
+
+    }
+    p.categorie{
+        background-color: black;
+        color: white;
+        display: inline-block;
+        margin-top: -20px; /*c'est la marge du haut*/
+        margin-left: 0px; /*c'est la marge de gauche*/
+        margin-bottom: 0; /*c'est la marge de bas*/
+        padding: 8px 18px; /* padding = etirer les extremités */
+        font-weight: bold;
+        font-size: 16px;
+      
+        
+    }
+    div.contenu{
+        background-color: white;
+        margin: 60px 10% 0px 10%; /* margin = marge. haut,bas,gauche,droite*/
+        padding: 0px 30px 30px 30px;
+        min-width: 350px; /*min-width = largeur minimale*/
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /*box-shadow = mettre de l'ombre*/
+        overflow: visible; /* affiche la partie invisible*/
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 10;
+        margin-top: 10;
+    }
+    p.description{
+        max-width: 400px; /*max-with = largeur maximal d'un paragraphe*/
+        display: inline-block; /*display = choisir le type d'occupation de la ligne*/
+        font-size: 14;
+    }
+    .center{
+       text-align: center;
+       width: 100%; 
+    }
+    /*pour bien centrer il faut utiliser display:inline-block et text-align*/
+
+    div.categorie{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        overflow: visible; /* affiche la partie invisible*/
+        
+    }
+    div.separateur{
+        background-color: black;
+        height: 1px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table.info{
+        position: absolute; 
+        bottom: 0px; 
+        width: 100%;
+        color: white;
+        background-color: #6c829dc0;
+        height: 80px;
+    }
+    div.info{
+        position: relative;
+    }
+    table.info td{
+        text-align: center;
+        font-size: 14px;
+        vertical-align: top; /*vertical-align = alignement vertical*/
+    }
+    table.info th{
+        font-size: 15px;
+        vertical-align: bottom; /*vertical-align = alignement vertical*/
+        padding-bottom: 8px;
+    }
+    /*table.info td = acceder aux td. c'est le même principe pour toutes les sous balises d'une balise donnée*/
+
+    img.info{
+        display: block;
+        object-fit: cover;
+        max-height: 400px;
+        min-height: 200px;
+        background-color: lightgray;
+    }
+
+    div.colonne{
+        width: 45%;
+        
+        
+    }
+    div.colonne1{
+        display: inline-block;
+        margin-right: 10%;
+
+    }
+    div.colonne2{
+        float: right; /*mettre la colonne à droite*/
+    }
+    div.colonne h2{
+        text-align: center;
+        text-transform: uppercase; /*mettre en majuscule*/
+        font-size: 16px;
+        border-bottom: 5px solid #6c829d;
+        padding-bottom: 5px;
+    }
+    div.ingredient p{
+        border: 1px solid lightgrey;
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+
+    table.preparation p.numero{
+        background-color: #6c829d;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        box-sizing: border-box; /*permet de garder la taille d'un objet même en cas d'ajout d'un padding*/
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 50%; /*border-radius = rendre les bordure ronds*/
+        margin: 0;
+    }
+    table.preparation td{
+        vertical-align: top;
+    }
+    table.preparation td.prep_etap{
+        font-size: 14;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    table.preparation tr{
+        height: 30px;
+    }
+
+   
