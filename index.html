@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recette.css">
+
+
+</head>
+    <body> <!-- body = corps = page-->
+
+        <!-- on a donné deux nom à la div parce que par exemple quand on veux appliquer une modification à toutes les classes center on peut utiliser cette balise est concerné mais si on veut appliquer des modification uniquement à cette balise on peut utilise categorie-->
+        
+    
+        <div class="contenu">
+            <div class="center categorie">
+                <p class="categorie">Recette</p> 
+            </div>
+            <h1> Gateau au chocolar</h1> <!-- h1 = entête 1-->
+            <div class="separateur"></div> <!--ligne entre h1 et p.description-->
+            
+            <div class="center">
+                <p class="description">"cette recette facile du gateau au chocolat est un grand classique. elle fera plaisir aux plus gourmands"</p> <!-- p = paragraphe-->
+            </div>
+            <div class="info">  <!--position relative = repositionner l'objet par rapport à sa position d'origine-->
+                <img class="center info" src="gateau.jpg">
+
+                <table class="info">
+                <!-- absolute = dans la div vu qu'il n'y a que image et table et on a attribuer à table la position absolute et la postion relative à div alors l'image va occuper tout l'espace de la div et tablepeut-être positionner n'importe sur l'image. on peut la positionner au top,bottom,left ou rigth-->
+                    <tr> <!-- tr : table row = ligne-->
+                        <th>Difficulté</th> <!-- th : table header = entête-->
+                        <th>Préparation</th>
+                        <th>Cuisson</th>
+                        <th>Temps total</th>
+                    </tr>
+                    <tr>
+                        <td>Facile</td> <!-- td = table data. donnee d'une cellule-->
+                        <td>10 min</td>
+                        <td>25 min</td>
+                        <td>35 min</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="colonne1 colonne">
+                    <h2>Ingrédients</h2>
+                
+                        <div class="ingredient">
+                            <p>Chocolat noire : 200 g</p>
+                            <p>Sucre : 150 g</p> 
+                            <p>Beure : 200 g </p>
+                            <p>Oeuf : 4</p>
+                            <p>Farine : 80 g </p>
+                        </div>
+                </div>
+                <div class="colonne2 colonne">
+                    <h2>Préparation</h2>
+                    <table class="preparation"> 
+                        <tr>
+                            <td><p class="numero">1</p></td>
+                            <td class="prep_etap">Faire fondre le chocolat avec le beurre</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">2</p></td>
+                            <td class="prep_etap">Mélanger le succre,les oeufs et farine</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">3</p></td>
+                            <td class="prep_etap">Mélanger le tout pour faire une pate</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">4</p></td>
+                            <td class="prep_etap">Mettre au four</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+    
+        </div>
+    </body>
+</html>
+
+
+
+<!-- commentaires:
+        on peut faire : <p id="categorie">Recette</p> 
+        
+    - id peut-être appliquer à toutes les balise. il permet d'appliquer un style à une balise particulière ou à plusieurs balise qui possèle le même id. pour appliquer un style en ciblant id on # plus le nom de la balise et le nom de id. exmple:
+    #pctegorie{code css} c-à-d mettre le style sur tous les paragraphes qui ont un id categorie/
+si on fait #categorie{code css} c-à-d mettre à toutes les balises de id categorie le style 
+
+- class : a les même foctionnalités que id. permet de cibler. la class est plus utilisée. à la difference de id pour les class on utlise .class exmple:
+p.categorie{code css} = c-à-d tous les paragraphes de class categorie.
+
+.categorie{code css} =  toutes les balises de class categorie.
+
+p.categorie, h1.cateegorie{code css} = c-à-d tous les paragraphes et tous les h1 de class categorie.
+
+- div : permetde regrouper la partie que l'on pur appliquer des modifications communes à toute la partie 
+
+- display : permet choisir le type d'occupation de la ligne.
+
+
+-->
